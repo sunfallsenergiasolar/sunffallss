@@ -1,0 +1,79 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunfalls Energia Solar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background: #0e1217; color: #e6edf3; padding: 40px; }
+    .container { max-width: 960px; margin: auto; background: #161b22; border-radius: 12px; padding: 40px; box-shadow: 0 0 15px rgba(0,0,0,0.4); }
+    h1 { font-size: 2.5rem; margin-bottom: 20px; color: #58a6ff; }
+    nav { margin-bottom: 30px; display: flex; gap: 16px; flex-wrap: wrap; }
+    nav button { background: #21262d; border: 1px solid #30363d; color: #c9d1d9; padding: 10px 20px; border-radius: 8px; cursor: pointer; transition: 0.3s; }
+    nav button:hover { background: #30363d; }
+    .section { margin-bottom: 30px; }
+    .label { font-weight: 600; color: #8b949e; display: block; margin-top: 10px; }
+    .value { margin-left: 10px; color: #e6edf3; }
+    .highlight { color: #3fb950; font-weight: bold; }
+    ul { margin-top: 15px; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sunfalls Energia Solar</h1>
+    <nav>
+      <button onclick="scrollToSection('servicos')">Serviços</button>
+      <button onclick="scrollToSection('dados')">Dados da Empresa</button>
+      <button onclick="scrollToSection('endereco')">Endereço</button>
+      <button onclick="scrollToSection('socios')">Sócios</button>
+    </nav>
+
+    <div id="servicos" class="section">
+      <h2>🔋 Principais Serviços</h2>
+      <p>A Sunfalls Energia Solar atua no setor de energia solar fotovoltaica, oferecendo soluções completas para residências, comércios e indústrias. Nossa missão é democratizar o acesso à energia limpa, promovendo economia e sustentabilidade.</p>
+      <ul>
+        <li>Projeto e instalação de sistemas solares on-grid e off-grid</li>
+        <li>Manutenção preventiva e corretiva de sistemas fotovoltaicos</li>
+        <li>Consultoria e diagnóstico energético</li>
+        <li>Venda de equipamentos: inversores, módulos, estruturas</li>
+        <li>Atendimento técnico em todo o Paraná</li>
+      </ul>
+    </div>
+
+    <div id="dados" class="section">
+      <h2>📄 Dados da Empresa</h2>
+      <span class="label">Razão Social:</span><span class="value">Sunfalls Energia Solar LTDA</span><br>
+      <span class="label">Nome Fantasia:</span><span class="value">Sunfalls Energia Solar</span><br>
+      <span class="label">CNPJ:</span><span class="value">34.461.007/0001-22</span><br>
+      <span class="label">Data de Abertura:</span><span class="value">07/08/2019</span><br>
+      <span class="label">Situação Cadastral:</span><span class="value highlight">ATIVA</span><br>
+      <span class="label">Capital Social:</span><span class="value">R$ 50.000,00</span><br>
+      <span class="label">Regime Tributário:</span><span class="value">Simples Nacional</span><br>
+    </div>
+
+    <div id="endereco" class="section">
+      <h2>📍 Endereço</h2>
+      <span class="label">Rua:</span><span class="value">Rua Rio Claro, 500</span><br>
+      <span class="label">Bairro:</span><span class="value">Lancaster</span><br>
+      <span class="label">Cidade:</span><span class="value">Foz do Iguaçu</span><br>
+      <span class="label">Estado:</span><span class="value">Paraná (PR)</span><br>
+      <span class="label">CEP:</span><span class="value">85869-560</span><br>
+    </div>
+
+    <div id="socios" class="section">
+      <h2>🧑‍💼 Sócios Administradores</h2>
+      <ul>
+        <li>Antonio Pimenta Silva Junior – Sócio-Administrador (desde 18/01/2023)</li>
+        <li>Rodrigo Soares Siqueira – Sócio-Administrador (desde 18/01/2023)</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
